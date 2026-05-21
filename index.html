@@ -8,10 +8,10 @@
 <meta name="description" content="Acompanhamento nutricional individual para mulheres 35+ em Porto Alegre e online. Plano alimentar sem dieta restritiva.">
 <meta property="og:title" content="Leticia Lucena Nutricionista">
 <meta property="og:description" content="Método Mais Leve para mulheres 35+. Atendimento em Porto Alegre e online.">
-<meta property="og:image" content="/hero.jpg">
+<meta property="og:image" content="assets/hero.jpg">
 <meta property="og:type" content="website">
 
-<link rel="preload" as="image" href="/leticia-rindo.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="assets/leticia-rindo.jpg" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -167,12 +167,11 @@ p:last-child{margin-bottom:0}
 
 /* DOR */
 .dor{background:#fff;text-align:center}
-.dor-texto{max-width:680px;margin:0 auto;font-size:18px;color:var(--texto);font-weight:300;line-height:1.65}
+.dor-texto{max-width:640px;margin:0 auto;font-size:17px;color:var(--texto);font-weight:400;line-height:1.65}
 .dor-texto strong{color:var(--rosa-escuro);font-weight:600}
-.dor-secundario{margin-top:22px;font-size:17px;color:var(--texto-suave)}
-.dor-promessa{margin-top:22px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;color:var(--rosa-escuro);font-weight:500;line-height:1.4}
-.dor-aviso{max-width:640px;margin:36px auto 0;padding:24px 28px;border-left:3px solid var(--rosa-escuro);background:var(--rosa-poeira);text-align:left;border-radius:0 8px 8px 0}
-.dor-aviso p{font-size:15px;color:var(--texto);line-height:1.6;margin:0}
+.dor-promessa{max-width:560px;margin:22px auto 0;font-size:16px;color:var(--rosa-escuro);font-weight:500;line-height:1.55}
+.dor-aviso{max-width:600px;margin:32px auto 0;padding:18px 22px;border-left:3px solid var(--rosa-escuro);background:var(--rosa-poeira);text-align:left;border-radius:0 6px 6px 0}
+.dor-aviso p{font-size:14px;color:var(--texto-suave);line-height:1.55;margin:0;font-weight:400}
 .dor-aviso strong{color:var(--rosa-escuro);font-weight:600}
 
 /* MÉTODO */
@@ -183,7 +182,7 @@ p:last-child{margin-bottom:0}
 }
 .fase-num{
   font-family:'Cormorant Garamond',serif;
-  font-size:48px;color:var(--rosa-suave);line-height:1;margin-bottom:4px;
+  font-size:48px;color:var(--verde);line-height:1;margin-bottom:4px;font-weight:600;
 }
 .fase h3{font-size:22px;margin-bottom:10px}
 .fase p{font-size:15px;color:var(--texto-suave);margin:0}
@@ -210,18 +209,19 @@ p:last-child{margin-bottom:0}
 
 /* BANNER PROMESSA — CTA mid-página */
 .promessa{
-  background:linear-gradient(135deg, var(--rosa-poeira) 0%, #f0d4d8 100%);
+  background:linear-gradient(135deg, #eef3f1 0%, #d9e4e1 100%);
   padding:48px 0;text-align:center;
-  border-top:1px solid rgba(154,103,114,.1);
-  border-bottom:1px solid rgba(154,103,114,.1);
+  border-top:1px solid rgba(110,149,145,.18);
+  border-bottom:1px solid rgba(110,149,145,.18);
 }
 .promessa-texto{
   font-family:'Cormorant Garamond',serif;
-  font-size:22px;font-weight:500;line-height:1.4;color:var(--rosa-escuro);
+  font-size:22px;font-weight:500;line-height:1.4;color:var(--verde-escuro);
   max-width:680px;margin:0 auto 28px;
 }
-.promessa-texto strong{font-weight:600;font-style:italic}
-.btn-claro{background:var(--rosa-escuro);color:#fff}
+.promessa-texto strong{font-weight:600;color:var(--rosa-escuro)}
+.btn-claro{background:var(--verde-escuro);color:#fff;box-shadow:0 8px 22px rgba(110,149,145,.32)}
+.btn-claro:hover,.btn-claro:focus{background:#577f7b}
 
 /* AVALIAÇÕES — sessão única com reviews reais do Google */
 .avaliacoes{background:#fbf8f5}
@@ -262,7 +262,7 @@ p:last-child{margin-bottom:0}
 .avaliacoes-rodape a:hover{text-decoration:underline}
 
 /* CITAÇÃO */
-.citacao{background:var(--rosa-escuro);color:#fff;padding:64px 0;text-align:center}
+.citacao{background:var(--verde-escuro);color:#fff;padding:64px 0;text-align:center}
 .citacao blockquote{
   font-family:'Cormorant Garamond',serif;
   font-size:24px;font-weight:500;font-style:italic;line-height:1.4;
@@ -283,7 +283,7 @@ p:last-child{margin-bottom:0}
 .num-card{background:#fff;padding:24px 18px;border-radius:8px;box-shadow:var(--sombra)}
 .num-grande{
   font-family:'Cormorant Garamond',serif;font-size:46px;font-weight:500;
-  color:var(--rosa);line-height:1;margin-bottom:6px;
+  color:var(--verde-escuro);line-height:1;margin-bottom:6px;
 }
 .num-label{font-size:13px;color:var(--texto-suave);letter-spacing:.04em}
 
@@ -410,11 +410,10 @@ p:last-child{margin-bottom:0}
   .titulo h2{font-size:40px}
   .titulo p{font-size:18px}
 
-  .dor-texto{font-size:21px}
-  .dor-secundario{font-size:19px}
-  .dor-promessa{font-size:28px;margin-top:28px}
-  .dor-aviso{padding:28px 32px;margin-top:44px}
-  .dor-aviso p{font-size:17px}
+  .dor-texto{font-size:19px;max-width:680px}
+  .dor-promessa{font-size:18px;margin-top:28px;max-width:580px}
+  .dor-aviso{padding:20px 26px;margin-top:36px}
+  .dor-aviso p{font-size:14.5px}
 
   .fases{flex-direction:row;gap:24px}
   .fase{flex:1;padding:40px 32px}
@@ -462,7 +461,7 @@ p:last-child{margin-bottom:0}
 
 <header class="topo">
   <div class="container">
-    <a href="#topo" aria-label="Voltar ao topo"><img src="/logo-horizontal.png" alt="Leticia Lucena Nutricionista" width="280" height="80"></a>
+    <a href="#topo" aria-label="Voltar ao topo"><img src="assets/logo-horizontal.png" alt="Leticia Lucena Nutricionista" width="280" height="80"></a>
     <a href="#formulario" class="topo-cta">Quero Agendar</a>
   </div>
 </header>
@@ -481,10 +480,10 @@ p:last-child{margin-bottom:0}
     <div class="hero-foto">
       <div class="hero-foto-bloco" aria-hidden="true"></div>
       <div class="hero-foto-principal">
-        <img src="/leticia-rindo.jpg" alt="Leticia Lucena, nutricionista em Porto Alegre" width="1200" height="1800" fetchpriority="high">
+        <img src="assets/leticia-rindo.jpg" alt="Leticia Lucena, nutricionista em Porto Alegre" width="1200" height="1800" fetchpriority="high">
       </div>
       <div class="hero-foto-secundaria" aria-hidden="true">
-        <img src="/leticia-celular.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
+        <img src="assets/leticia-celular.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
       </div>
       <div class="hero-assinatura">
         <strong>Leticia Lucena</strong>
@@ -502,9 +501,9 @@ p:last-child{margin-bottom:0}
       <p>Antes de continuar, assista o vídeo abaixo. É rápido, direto, e vai te ajudar a entender se faz sentido pra você.</p>
     </div>
     <div class="vsl-wrapper">
-      <video class="vsl-player" controls preload="metadata" playsinline poster="/vsl-poster.jpg">
-        <source src="/vsl-leticia.mp4" type="video/mp4">
-        Seu navegador não suporta o vídeo. <a href="/vsl-leticia.mp4">Baixar o vídeo</a>.
+      <video class="vsl-player" controls preload="metadata" playsinline poster="assets/vsl-poster.jpg">
+        <source src="assets/vsl-leticia.mp4" type="video/mp4">
+        Seu navegador não suporta o vídeo. <a href="assets/vsl-leticia.mp4">Baixar o vídeo</a>.
       </video>
     </div>
   </div>
@@ -513,14 +512,10 @@ p:last-child{margin-bottom:0}
 <section class="secao dor">
   <div class="container">
     <span class="olho">Para quem é</span>
-    <p class="dor-texto">Você acorda cedo, vai pra academia, tenta comer melhor e a balança não muda. A roupa aperta, a barriga não desincha. Depois dos 35 o corpo da mulher muda, e o que funcionava aos 25 simplesmente para de funcionar. <strong>Isso não tem nada a ver com falta de força de vontade.</strong></p>
-
-    <p class="dor-texto dor-secundario">Junto vêm os <strong>calorões</strong>, a <strong>fadiga</strong> que aperta no fim da tarde, a <strong>libido</strong> que sumiu, o desânimo, o sono ruim. A autoestima cai, o espelho incomoda, e parece que ninguém entende.</p>
-
-    <p class="dor-texto dor-promessa">Você merece se sentir bem de novo. Com energia pra atravessar o dia, leveza pra se olhar no espelho, e um corpo que volta a ser seu aliado.</p>
-
+    <p class="dor-texto">Você acorda cedo, vai pra academia, tenta comer melhor e a balança não muda. A roupa aperta, a barriga não desincha. <strong>Depois dos 35 o corpo da mulher muda</strong>, e o que funcionava aos 25 para de funcionar. Junto vêm os calorões, a fadiga, a libido que sumiu, o desânimo, o sono ruim. Isso não tem nada a ver com falta de força de vontade.</p>
+    <p class="dor-promessa">Você merece se sentir bem de novo. Com energia pra atravessar o dia, leveza pra se olhar no espelho, e um corpo que volta a ser seu aliado.</p>
     <div class="dor-aviso">
-      <p>Antes de qualquer coisa, quero esclarecer: <strong>o Método Mais Leve não é mágico.</strong> Não foi feito para quem busca perder peso de maneira fácil. É um método que funciona e exige esforço, dedicação e coragem.</p>
+      <p><strong>O Método Mais Leve não é mágico.</strong> Não foi feito para quem busca perder peso de maneira fácil. É um método que funciona e exige esforço, dedicação e coragem.</p>
     </div>
   </div>
 </section>
@@ -769,7 +764,7 @@ p:last-child{margin-bottom:0}
 <section class="secao sobre">
   <div class="container sobre-grid">
     <div class="sobre-img">
-      <img src="/leticia-rindo.jpg" alt="Leticia Lucena" loading="lazy" decoding="async" width="540" height="720">
+      <img src="assets/leticia-rindo.jpg" alt="Leticia Lucena" loading="lazy" decoding="async" width="540" height="720">
     </div>
     <div class="sobre-texto">
       <span class="olho">Quem te atende</span>
@@ -857,7 +852,7 @@ p:last-child{margin-bottom:0}
 <footer class="rodape">
   <div class="container rodape-grid">
     <div class="rodape-marca">
-      <img src="/logo-horizontal.png" alt="Leticia Lucena Nutricionista" width="220" height="60" loading="lazy">
+      <img src="assets/logo-horizontal.png" alt="Leticia Lucena Nutricionista" width="220" height="60" loading="lazy">
       <p>Nutricionista em Porto Alegre, especializada em emagrecimento feminino 35+. Atendimento presencial e online para todo o Brasil.</p>
     </div>
 
