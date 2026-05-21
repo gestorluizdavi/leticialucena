@@ -8,10 +8,10 @@
 <meta name="description" content="Acompanhamento nutricional individual para mulheres 35+ em Porto Alegre e online. Plano alimentar sem dieta restritiva.">
 <meta property="og:title" content="Leticia Lucena Nutricionista">
 <meta property="og:description" content="Método Mais Leve para mulheres 35+. Atendimento em Porto Alegre e online.">
-<meta property="og:image" content="/hero.jpg">
+<meta property="og:image" content="assets/hero.jpg">
 <meta property="og:type" content="website">
 
-<link rel="preload" as="image" href="/leticia-rindo.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="assets/leticia-rindo.jpg" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -150,6 +150,9 @@ p:last-child{margin-bottom:0}
 }
 .btn:hover,.btn:focus{background:#7d5460;transform:translateY(-1px);outline:none}
 .btn:disabled{opacity:.5;cursor:wait}
+.btn-verde{background:#25d366;box-shadow:0 8px 22px rgba(37,211,102,.36)}
+.btn-verde:hover,.btn-verde:focus{background:#1eba56}
+.btn-verde svg{flex-shrink:0}
 
 /* SEÇÕES */
 .secao{padding:60px 0}
@@ -166,6 +169,8 @@ p:last-child{margin-bottom:0}
 .dor{background:#fff;text-align:center}
 .dor-texto{max-width:680px;margin:0 auto;font-size:18px;color:var(--texto);font-weight:300;line-height:1.65}
 .dor-texto strong{color:var(--rosa-escuro);font-weight:600}
+.dor-secundario{margin-top:22px;font-size:17px;color:var(--texto-suave)}
+.dor-promessa{margin-top:22px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;color:var(--rosa-escuro);font-weight:500;line-height:1.4}
 .dor-aviso{max-width:640px;margin:36px auto 0;padding:24px 28px;border-left:3px solid var(--rosa-escuro);background:var(--rosa-poeira);text-align:left;border-radius:0 8px 8px 0}
 .dor-aviso p{font-size:15px;color:var(--texto);line-height:1.6;margin:0}
 .dor-aviso strong{color:var(--rosa-escuro);font-weight:600}
@@ -191,6 +196,18 @@ p:last-child{margin-bottom:0}
 .recebe-item h3{font-size:21px;margin-bottom:6px;font-weight:500}
 .recebe-item p{font-size:15px;color:var(--texto-suave);margin:0;line-height:1.6}
 
+/* VSL — vídeo de apresentação */
+.vsl-secao{background:#fbf8f5;padding:48px 0;text-align:center}
+.vsl-secao .titulo{margin-bottom:28px}
+.vsl-wrapper{
+  position:relative;max-width:760px;margin:0 auto;
+  border-radius:14px;overflow:hidden;
+  box-shadow:0 18px 50px rgba(154,103,114,.22);
+  background:#000;
+  aspect-ratio:16/9;
+}
+.vsl-player{width:100%;height:100%;display:block;background:#000}
+
 /* BANNER PROMESSA — CTA mid-página */
 .promessa{
   background:linear-gradient(135deg, var(--rosa-poeira) 0%, #f0d4d8 100%);
@@ -205,6 +222,44 @@ p:last-child{margin-bottom:0}
 }
 .promessa-texto strong{font-weight:600;font-style:italic}
 .btn-claro{background:var(--rosa-escuro);color:#fff}
+
+/* AVALIAÇÕES — sessão única com reviews reais do Google */
+.avaliacoes{background:#fbf8f5}
+.avaliacoes-grid{
+  display:grid;grid-template-columns:1fr;gap:16px;
+  max-width:1100px;margin:0 auto;
+}
+.aval-card{
+  background:#fff;border:1px solid #ece2dc;border-radius:12px;
+  padding:22px 22px 20px;
+  box-shadow:0 4px 14px rgba(154,103,114,.06);
+  display:flex;flex-direction:column;gap:12px;
+}
+.aval-header{display:flex;align-items:center;gap:12px}
+.aval-avatar{
+  width:44px;height:44px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-weight:600;font-size:18px;flex-shrink:0;
+  background:#9a6772;
+}
+.aval-info{flex:1;min-width:0}
+.aval-nome{font-weight:600;font-size:14.5px;color:var(--texto);line-height:1.25;margin-bottom:2px}
+.aval-meta{font-size:12px;color:var(--texto-suave);line-height:1.2}
+.aval-google{
+  width:26px;height:26px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,#4285f4 0%,#34a853 33%,#fbbc04 66%,#ea4335 100%);
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:13px;font-family:Arial,sans-serif;
+}
+.aval-stars-row{display:flex;align-items:center;gap:10px}
+.aval-stars{color:#fbbc04;font-size:14px;letter-spacing:1px;line-height:1}
+.aval-data{font-size:12px;color:var(--texto-suave)}
+.aval-texto{
+  font-size:14.5px;color:var(--texto);line-height:1.6;margin:0;
+}
+.avaliacoes-rodape{text-align:center;margin-top:32px;font-size:14px}
+.avaliacoes-rodape a{color:var(--rosa-escuro);font-weight:500;text-decoration:none}
+.avaliacoes-rodape a:hover{text-decoration:underline}
 
 /* CITAÇÃO */
 .citacao{background:var(--rosa-escuro);color:#fff;padding:64px 0;text-align:center}
@@ -305,12 +360,21 @@ p:last-child{margin-bottom:0}
 
 /* RODAPÉ */
 .rodape{
-  background:#f6e4e7;color:var(--texto-suave);text-align:center;
-  padding:42px 22px;font-size:13px;
+  background:#f6e4e7;color:var(--texto-suave);
+  padding:48px 0 0;font-size:13px;
 }
-.rodape img{height:54px;margin:0 auto 14px;width:auto}
+.rodape-grid{display:grid;grid-template-columns:1fr;gap:32px;padding:0 22px 32px}
+.rodape h4{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--rosa-escuro);font-weight:600;margin-bottom:10px}
+.rodape p{font-size:13px;line-height:1.6;margin-bottom:8px}
+.rodape a{color:var(--rosa-escuro);text-decoration:none;font-weight:500}
+.rodape a:hover{text-decoration:underline}
 .rodape strong{color:var(--rosa-escuro);font-weight:600}
-.rodape-mini{margin-top:12px;font-size:11px;color:#a89e98}
+.rodape-marca img{height:54px;width:auto;margin-bottom:14px;display:block}
+.rodape-link{display:inline-block;margin-top:8px;font-size:13px;letter-spacing:.02em}
+.rodape-mapa{border-radius:10px;overflow:hidden;box-shadow:0 4px 14px rgba(154,103,114,.14)}
+.rodape-mapa iframe{width:100%;height:200px;border:0;display:block}
+.rodape-base{background:#e8d6d6;padding:14px 22px;text-align:center}
+.rodape-mini{font-size:11px;color:#7a716c;margin:0;letter-spacing:.03em}
 
 /* DESKTOP */
 @media (min-width:760px){
@@ -347,6 +411,8 @@ p:last-child{margin-bottom:0}
   .titulo p{font-size:18px}
 
   .dor-texto{font-size:21px}
+  .dor-secundario{font-size:19px}
+  .dor-promessa{font-size:28px;margin-top:28px}
   .dor-aviso{padding:28px 32px;margin-top:44px}
   .dor-aviso p{font-size:17px}
 
@@ -354,6 +420,10 @@ p:last-child{margin-bottom:0}
   .fase{flex:1;padding:40px 32px}
   .fase h3{font-size:24px}
 
+  .vsl-secao{padding:80px 0}
+  .vsl-secao .titulo{margin-bottom:40px}
+  .avaliacoes-grid{grid-template-columns:repeat(2,1fr);gap:22px}
+  .aval-card{padding:26px 26px 22px}
   .promessa{padding:72px 0}
   .promessa-texto{font-size:30px;margin-bottom:36px}
   .citacao{padding:84px 0}
@@ -375,8 +445,10 @@ p:last-child{margin-bottom:0}
   .faq-item summary{padding:26px 30px;font-size:18px}
   .faq-item p{padding:0 30px 26px;font-size:16px}
 
-  .rodape{padding:54px 22px}
-  .rodape img{height:60px}
+  .rodape{padding:60px 0 0}
+  .rodape-grid{grid-template-columns:1.2fr 1fr 1fr 1.4fr;gap:40px;padding:0 32px 40px;max-width:1180px;margin:0 auto}
+  .rodape-marca img{height:64px}
+  .rodape-mapa iframe{height:220px}
 }
 
 /* PREFER REDUCED MOTION */
@@ -390,7 +462,7 @@ p:last-child{margin-bottom:0}
 
 <header class="topo">
   <div class="container">
-    <a href="#topo" aria-label="Voltar ao topo"><img src="./logo-horizontal.png" alt="Leticia Lucena Nutricionista" width="280" height="80"></a>
+    <a href="#topo" aria-label="Voltar ao topo"><img src="assets/logo-horizontal.png" alt="Leticia Lucena Nutricionista" width="280" height="80"></a>
     <a href="#formulario" class="topo-cta">Quero Agendar</a>
   </div>
 </header>
@@ -399,17 +471,20 @@ p:last-child{margin-bottom:0}
   <div class="container hero-grid">
     <div class="hero-texto">
       <span class="hero-tag">Método Mais Leve  /  Mulheres 35+</span>
-      <h1>Leticia Lucena. <em>Emagrecimento que cabe na sua vida.</em></h1>
-      <p class="hero-lead">Acompanhamento nutricional individual, sem dieta restritiva e sem efeito sanfona.</p>
-      <a href="#formulario" class="btn">Agendar agora</a>
+      <h1>Emagreça até 2 números no manequim. <em>Sem dieta restritiva, sem efeito sanfona.</em></h1>
+      <p class="hero-lead">Já são <strong>+400 mulheres acima dos 35 anos</strong> que recuperaram autoestima, energia e o corpo que amam, com acompanhamento individual baseado em ciência.</p>
+      <a href="#formulario" class="btn btn-verde">
+        <svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        Quero agendar minha avaliação
+      </a>
     </div>
     <div class="hero-foto">
       <div class="hero-foto-bloco" aria-hidden="true"></div>
       <div class="hero-foto-principal">
-        <img src="/leticia-rindo.jpg" alt="Leticia Lucena, nutricionista em Porto Alegre" width="1200" height="1800" fetchpriority="high">
+        <img src="assets/leticia-rindo.jpg" alt="Leticia Lucena, nutricionista em Porto Alegre" width="1200" height="1800" fetchpriority="high">
       </div>
       <div class="hero-foto-secundaria" aria-hidden="true">
-        <img src="/leticia-celular.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
+        <img src="assets/leticia-celular.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
       </div>
       <div class="hero-assinatura">
         <strong>Leticia Lucena</strong>
@@ -419,10 +494,31 @@ p:last-child{margin-bottom:0}
   </div>
 </section>
 
+<section class="vsl-secao">
+  <div class="container">
+    <div class="titulo">
+      <span class="olho">Conheça a Leticia</span>
+      <h2>Em 1 minuto, ela te conta tudo.</h2>
+      <p>Antes de continuar, assista o vídeo abaixo. É rápido, direto, e vai te ajudar a entender se faz sentido pra você.</p>
+    </div>
+    <div class="vsl-wrapper">
+      <video class="vsl-player" controls preload="metadata" playsinline poster="assets/vsl-poster.jpg">
+        <source src="assets/vsl-leticia.mp4" type="video/mp4">
+        Seu navegador não suporta o vídeo. <a href="assets/vsl-leticia.mp4">Baixar o vídeo</a>.
+      </video>
+    </div>
+  </div>
+</section>
+
 <section class="secao dor">
   <div class="container">
     <span class="olho">Para quem é</span>
     <p class="dor-texto">Você acorda cedo, vai pra academia, tenta comer melhor e a balança não muda. A roupa aperta, a barriga não desincha. Depois dos 35 o corpo da mulher muda, e o que funcionava aos 25 simplesmente para de funcionar. <strong>Isso não tem nada a ver com falta de força de vontade.</strong></p>
+
+    <p class="dor-texto dor-secundario">Junto vêm os <strong>calorões</strong>, a <strong>fadiga</strong> que aperta no fim da tarde, a <strong>libido</strong> que sumiu, o desânimo, o sono ruim. A autoestima cai, o espelho incomoda, e parece que ninguém entende.</p>
+
+    <p class="dor-texto dor-promessa">Você merece se sentir bem de novo. Com energia pra atravessar o dia, leveza pra se olhar no espelho, e um corpo que volta a ser seu aliado.</p>
+
     <div class="dor-aviso">
       <p>Antes de qualquer coisa, quero esclarecer: <strong>o Método Mais Leve não é mágico.</strong> Não foi feito para quem busca perder peso de maneira fácil. É um método que funciona e exige esforço, dedicação e coragem.</p>
     </div>
@@ -507,9 +603,6 @@ p:last-child{margin-bottom:0}
       <span class="olho">Resultados</span>
       <h2>Mulheres que pararam de recomeçar.</h2>
     </div>
-    <div class="resultados-img">
-      <img src="/depoimentos.jpg" alt="Resultados de pacientes do Método Mais Leve" loading="lazy" decoding="async" width="1100" height="660">
-    </div>
     <div class="numeros">
       <div class="num-card">
         <div class="num-grande">+400</div>
@@ -527,10 +620,156 @@ p:last-child{margin-bottom:0}
   </div>
 </section>
 
+<section class="secao avaliacoes">
+  <div class="container">
+    <div class="titulo">
+      <span class="olho">Avaliações no Google</span>
+      <h2>O que dizem por aí.</h2>
+      <p>Avaliações reais deixadas no Google por pacientes da Leticia.</p>
+    </div>
+
+    <div class="avaliacoes-grid">
+
+      <article class="aval-card">
+        <div class="aval-header">
+          <div class="aval-avatar" style="background:#9a6772">E</div>
+          <div class="aval-info">
+            <div class="aval-nome">Estefânia Pesenti dos Santos</div>
+            <div class="aval-meta">Local Guide · 44 avaliações</div>
+          </div>
+          <span class="aval-google" title="Avaliação do Google">G</span>
+        </div>
+        <div class="aval-stars-row">
+          <span class="aval-stars" aria-label="5 estrelas">★★★★★</span>
+          <span class="aval-data">há 2 meses</span>
+        </div>
+        <p class="aval-texto">Minha experiência com a Nutri Letícia tem sido maravilhosa! Desde o primeiro atendimento me senti acolhida e ouvida. O plano alimentar é totalmente personalizado, pensado na minha rotina, o que fez toda a diferença. Ela acompanha de perto, motiva com carinho e transmite muita segurança. Sou muito grata por ter uma profissional tão dedicada nessa jornada. Recomendo de olhos fechados!</p>
+      </article>
+
+      <article class="aval-card">
+        <div class="aval-header">
+          <div class="aval-avatar" style="background:#7a716c">M</div>
+          <div class="aval-info">
+            <div class="aval-nome">Marta Leopold Silva</div>
+            <div class="aval-meta">3 avaliações</div>
+          </div>
+          <span class="aval-google" title="Avaliação do Google">G</span>
+        </div>
+        <div class="aval-stars-row">
+          <span class="aval-stars" aria-label="5 estrelas">★★★★★</span>
+          <span class="aval-data">há 1 ano</span>
+        </div>
+        <p class="aval-texto">Profissional excelente!!! Atendimento acolhedor e esclarecedor. Deixa o paciente muito confiante em busca dos objetivos. Só tenho a agradecer pela maneira com que demonstra que somos capazes de atingir nossos objetivos.</p>
+      </article>
+
+      <article class="aval-card">
+        <div class="aval-header">
+          <div class="aval-avatar" style="background:#6e9591">C</div>
+          <div class="aval-info">
+            <div class="aval-nome">Catia Bonfiglio</div>
+            <div class="aval-meta">1 avaliação</div>
+          </div>
+          <span class="aval-google" title="Avaliação do Google">G</span>
+        </div>
+        <div class="aval-stars-row">
+          <span class="aval-stars" aria-label="5 estrelas">★★★★★</span>
+          <span class="aval-data">há 9 meses</span>
+        </div>
+        <p class="aval-texto">Ótima. Profissional atenciosa, com foco nos objetivos a serem alcançados, com um cronograma acessível e receitas fáceis.</p>
+      </article>
+
+      <article class="aval-card">
+        <div class="aval-header">
+          <div class="aval-avatar" style="background:#c08c95">P</div>
+          <div class="aval-info">
+            <div class="aval-nome">Priscilla Gonçalves</div>
+            <div class="aval-meta">1 avaliação</div>
+          </div>
+          <span class="aval-google" title="Avaliação do Google">G</span>
+        </div>
+        <div class="aval-stars-row">
+          <span class="aval-stars" aria-label="5 estrelas">★★★★★</span>
+          <span class="aval-data">há 1 ano</span>
+        </div>
+        <p class="aval-texto">Excelente profissional. Tira todas as dúvidas e ainda dá vários brindes para os pacientes. O contato com ela é diário, sempre solicita para tirar dúvidas e fazer acompanhamento ou alterações na dieta.</p>
+      </article>
+
+      <article class="aval-card aval-destaque">
+        <div class="aval-header">
+          <div class="aval-avatar" style="background:#b75658">C</div>
+          <div class="aval-info">
+            <div class="aval-nome">Cristina Mendieta</div>
+            <div class="aval-meta">1 avaliação</div>
+          </div>
+          <span class="aval-google" title="Avaliação do Google">G</span>
+        </div>
+        <div class="aval-stars-row">
+          <span class="aval-stars" aria-label="5 estrelas">★★★★★</span>
+          <span class="aval-data">há 2 anos</span>
+        </div>
+        <p class="aval-texto">Nem sei o que dizer da Letícia! Melhor nutricionista que já consultei! Super atenciosa, não mede esforços para te ajudar e esclarecer tuas dúvidas. Realmente interessada em ajudar o paciente, como uma amiga. Me apresentou um plano super alinhado com a minha rotina, sem que eu tenha que me sacrificar e fazer malabarismos! Em apenas 1 semana seguindo o plano, já estou vendo os resultados e estou muito feliz!!! Com profissionalismo, alegria e humor, ela te inspira a ir adiante! Sem esse apoio, não sei se eu teria disciplina de seguir um plano! Gratidão, Letícia!!</p>
+      </article>
+
+      <article class="aval-card">
+        <div class="aval-header">
+          <div class="aval-avatar" style="background:#7e3f8e">M</div>
+          <div class="aval-info">
+            <div class="aval-nome">Margarete Lucena</div>
+            <div class="aval-meta">2 avaliações</div>
+          </div>
+          <span class="aval-google" title="Avaliação do Google">G</span>
+        </div>
+        <div class="aval-stars-row">
+          <span class="aval-stars" aria-label="5 estrelas">★★★★★</span>
+          <span class="aval-data">há 3 anos</span>
+        </div>
+        <p class="aval-texto">Comecei a me consultar há poucos dias e já estou obtendo resultados. Passei a me alimentar bem melhor, sem retirar alimentos que gosto. A nutricionista Leticia é dedicada, sempre tira minhas dúvidas e mostra muita competência. Recomendadíssima!</p>
+      </article>
+
+      <article class="aval-card">
+        <div class="aval-header">
+          <div class="aval-avatar" style="background:#5b7c99">R</div>
+          <div class="aval-info">
+            <div class="aval-nome">Regina Seixas</div>
+            <div class="aval-meta">1 avaliação</div>
+          </div>
+          <span class="aval-google" title="Avaliação do Google">G</span>
+        </div>
+        <div class="aval-stars-row">
+          <span class="aval-stars" aria-label="5 estrelas">★★★★★</span>
+          <span class="aval-data">há 3 anos</span>
+        </div>
+        <p class="aval-texto">Profissional super competente! Atendimento especializado, cuidando individualmente de cada caso e não promessas milagrosas. Parabéns, por ter a compreensão da importância da saúde e, o melhor, ser especialista em gente!</p>
+      </article>
+
+      <article class="aval-card">
+        <div class="aval-header">
+          <div class="aval-avatar" style="background:#7a716c">L</div>
+          <div class="aval-info">
+            <div class="aval-nome">Letícia Paulino</div>
+            <div class="aval-meta">3 avaliações</div>
+          </div>
+          <span class="aval-google" title="Avaliação do Google">G</span>
+        </div>
+        <div class="aval-stars-row">
+          <span class="aval-stars" aria-label="5 estrelas">★★★★★</span>
+          <span class="aval-data">há 2 anos</span>
+        </div>
+        <p class="aval-texto">Atendimento personalizado às necessidades e possibilidades do paciente. Dá várias dicas de como comprar e organizar a alimentação de uma forma saudável, sem extremismos. Super recomendo!</p>
+      </article>
+
+    </div>
+
+    <p class="avaliacoes-rodape">
+      <a href="https://www.google.com/maps/search/?api=1&query=-30.0351429,-51.179966" target="_blank" rel="noopener">Ver todas as avaliações no Google →</a>
+    </p>
+  </div>
+</section>
+
 <section class="secao sobre">
   <div class="container sobre-grid">
     <div class="sobre-img">
-      <img src="/leticia-rindo.jpg" alt="Leticia Lucena" loading="lazy" decoding="async" width="540" height="720">
+      <img src="assets/leticia-rindo.jpg" alt="Leticia Lucena" loading="lazy" decoding="async" width="540" height="720">
     </div>
     <div class="sobre-texto">
       <span class="olho">Quem te atende</span>
@@ -541,6 +780,7 @@ p:last-child{margin-bottom:0}
     </div>
   </div>
 </section>
+
 
 <section class="secao form-secao" id="formulario">
   <div class="container">
@@ -615,46 +855,75 @@ p:last-child{margin-bottom:0}
 </section>
 
 <footer class="rodape">
-  <img src="/logo-horizontal.png" alt="Leticia Lucena Nutricionista" loading="lazy" width="280" height="80">
-  <p><strong>Leticia Lucena Nutricionista</strong></p>
-  <p>Atendimento em Porto Alegre e online para todo o Brasil</p>
-  <p class="rodape-mini">© 2026 Todos os direitos reservados</p>
+  <div class="container rodape-grid">
+    <div class="rodape-marca">
+      <img src="assets/logo-horizontal.png" alt="Leticia Lucena Nutricionista" width="220" height="60" loading="lazy">
+      <p>Nutricionista em Porto Alegre, especializada em emagrecimento feminino 35+. Atendimento presencial e online para todo o Brasil.</p>
+    </div>
+
+    <div class="rodape-local">
+      <h4>Consultório</h4>
+      <p><strong>Nutricionista Clínica Leticia Lucena</strong><br>
+      Av. Lageado, 1212 · sala 102<br>
+      Bairro Petrópolis · Porto Alegre / RS<br>
+      CEP 90460-110</p>
+      <a class="rodape-link" href="https://www.google.com/maps/search/?api=1&query=-30.0351429,-51.179966" target="_blank" rel="noopener">Ver no Google Maps</a>
+    </div>
+
+    <div class="rodape-contato">
+      <h4>Contato</h4>
+      <p>WhatsApp: <a href="https://api.whatsapp.com/send/?phone=%2B5551993341398&text=Ol%C3%A1%2C+Leticia.+Vim+do+seu+site+e+gostaria+de+saber+mais+informa%C3%A7%C3%B5es+sobre+sua+consulta.+%28N%C3%A3o+apague+essa+mensagem+para+ter+um+atendimento+priorit%C3%A1rio%29&type=phone_number&app_absent=0" target="_blank" rel="noopener">(51) 99334-1398</a></p>
+      <p>CRN: 18076D</p>
+    </div>
+
+    <div class="rodape-mapa">
+      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Avenida+Lageado+1212+Porto+Alegre&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" title="Localização do consultório"></iframe>
+    </div>
+  </div>
+
+  <div class="rodape-base">
+    <p class="rodape-mini">© 2026 Leticia Lucena Nutricionista. Todos os direitos reservados.</p>
+  </div>
 </footer>
 
 <script>
-var SHEET="https://script.google.com/macros/s/AKfycbyg3muBHw8V85iYCwFT9a03dpA14oThdNUdMDCZvrsZFKCVUFaaeYs8ZnRVjOEHc3qi/exec";
+var FORM=document.getElementById('formLead'),BT=document.getElementById('btnEnviar'),LD=document.getElementById('formLoading'),ER=document.getElementById('formErro');
+var WHATS="https://api.whatsapp.com/send/?phone=%2B5551993341398&text=Ol%C3%A1%2C+Leticia.+Vim+do+seu+site+e+gostaria+de+saber+mais+informa%C3%A7%C3%B5es+sobre+sua+consulta.+%28N%C3%A3o+apague+essa+mensagem+para+ter+um+atendimento+priorit%C3%A1rio%29&type=phone_number&app_absent=0";
+var GOOGLE_SHEETS_URL="https://script.google.com/macros/s/AKfycbyg3muBHw8V85iYCwFT9a03dpA14oThdNUdMDCZvrsZFKCVUFaaeYs8ZnRVjOEHc3qi/exec";
 
-document.getElementById('telefone').addEventListener('input',function(e){
-  var v=e.target.value.replace(/\D/g,'').slice(0,11);
-  if(v.length>6)v='('+v.slice(0,2)+') '+v.slice(2,7)+'-'+v.slice(7);
-  else if(v.length>2)v='('+v.slice(0,2)+') '+v.slice(2);
-  e.target.value=v;
-});
-
-document.getElementById('formLead').addEventListener('submit',function(e){
+FORM.addEventListener('submit',function(e){
   e.preventDefault();
+  ER.textContent='';
   var nome=document.getElementById('nome').value.trim();
   var tel=document.getElementById('telefone').value.trim();
   var obj=document.getElementById('objetivo').value;
-  var erro=document.getElementById('formErro');
-  var btn=document.getElementById('btnEnviar');
-  var ld=document.getElementById('formLoading');
-  erro.style.display='none';
-  if(!nome||nome.length<2){erro.textContent='Por favor, informe seu nome.';erro.style.display='block';return}
-  if(tel.replace(/\D/g,'').length<10){erro.textContent='WhatsApp inválido. Use DDD + número.';erro.style.display='block';return}
-  if(!obj){erro.textContent='Selecione seu objetivo.';erro.style.display='block';return}
-  btn.disabled=true;ld.style.display='block';
+  if(!nome||!tel||!obj){ER.textContent='Por favor, preencha todos os campos.';return}
+  if(tel.replace(/\D/g,'').length<10){ER.textContent='Telefone inválido. Use DDD + número.';return}
+
   try{sessionStorage.setItem('leadLeticia',JSON.stringify({nome:nome,telefone:tel,objetivo:obj}))}catch(_){}
-  var d=new FormData();
-  d.append('nome',nome);d.append('telefone',tel);d.append('objetivo',obj);
-  d.append('origem','Landing 35+');d.append('timestamp',new Date().toISOString());
-  fetch(SHEET,{method:'POST',mode:'no-cors',body:d}).catch(function(){}).finally(function(){
-    if(window.fbq)fbq('track','Lead',{content_name:'Landing 35+',value:0,currency:'BRL'});
-    window.location.href='obrigado.html';
-  });
+
+  var fd=new FormData();
+  fd.append('nome',nome);
+  fd.append('telefone',tel);
+  fd.append('objetivo',obj);
+  fd.append('origem','Landing 35+');
+  fd.append('timestamp',new Date().toISOString());
+
+  fetch(GOOGLE_SHEETS_URL,{method:'POST',body:fd,mode:'no-cors'})
+    .then(function(){window.location.href='obrigado.html'})
+    .catch(function(){window.location.href='obrigado.html'});
+
+  setTimeout(function(){window.location.href='obrigado.html'},2500);
+});
+
+document.getElementById('telefone').addEventListener('input',function(e){
+  var v=e.target.value.replace(/\D/g,'').slice(0,11);
+  if(v.length<=2)v='('+v;
+  else if(v.length<=7)v='('+v.slice(0,2)+') '+v.slice(2);
+  else v='('+v.slice(0,2)+') '+v.slice(2,7)+'-'+v.slice(7);
+  e.target.value=v;
 });
 </script>
 
 </body>
 </html>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
