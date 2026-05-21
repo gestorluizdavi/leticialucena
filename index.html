@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#9a6772">
+<title>Leticia Lucena Nutricionista | Emagrecimento feminino 35+</title>
+<meta name="description" content="Acompanhamento nutricional individual para mulheres 35+ em Porto Alegre e online. Plano alimentar sem dieta restritiva.">
+<meta property="og:title" content="Leticia Lucena Nutricionista">
+<meta property="og:description" content="Método Mais Leve para mulheres 35+. Atendimento em Porto Alegre e online.">
+<meta property="og:image" content="assets/hero.jpg">
+<meta property="og:type" content="website">
+
+<link rel="preload" as="image" href="assets/leticia-rindo.jpg" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','561092793173645');fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=561092793173645&ev=PageView&noscript=1" alt=""></noscript>
+
+<style>
+:root{
+  --rosa:#c08c95;--rosa-escuro:#9a6772;--rosa-suave:#e8c8cf;--rosa-poeira:#f6e4e7;
+  --verde:#9bbab6;--verde-escuro:#6e9591;
+  --texto:#3d3733;--texto-suave:#7a716c;--off-white:#fbf8f5;
+  --sombra:0 10px 30px rgba(154,103,114,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  color:var(--texto);background:var(--off-white);
+  line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.18;color:var(--rosa-escuro);letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block;height:auto}
+p{margin-bottom:.9em}
+p:last-child{margin-bottom:0}
+.container{max-width:1100px;margin:0 auto;padding:0 22px}
+
+/* TOPO */
+.topo{
+  background:rgba(251,248,245,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  padding:14px 0;position:sticky;top:0;z-index:50;
+  border-bottom:1px solid rgba(192,140,149,.1);
+}
+.topo .container{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.topo img{height:40px;width:auto}
+.topo-cta{
+  font-size:13px;color:var(--rosa-escuro);font-weight:500;
+  padding:9px 18px;border:1.5px solid var(--rosa);border-radius:999px;
+  transition:background .2s,color .2s;
+}
+.topo-cta:hover{background:var(--rosa);color:#fff}
+
+/* HERO — composição editorial em camadas */
+.hero{
+  background:
+    radial-gradient(circle at 85% 15%, rgba(246,228,231,.9) 0%, transparent 55%),
+    radial-gradient(circle at 10% 90%, rgba(232,214,214,.5) 0%, transparent 50%),
+    linear-gradient(165deg,#fbf8f5 0%,#f6e4e7 100%);
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;top:-80px;right:-80px;
+  width:280px;height:280px;border-radius:50%;
+  background:radial-gradient(circle, rgba(192,140,149,.12) 0%, transparent 70%);
+  pointer-events:none;
+}
+.hero-grid{display:flex;flex-direction:column;position:relative;z-index:2}
+.hero-texto{padding:40px 0 8px;position:relative;z-index:2}
+.hero-tag{
+  display:inline-block;color:var(--verde-escuro);
+  font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  margin-bottom:22px;
+}
+.hero h1{
+  font-size:38px;margin-bottom:18px;line-height:1.08;
+  font-weight:600;color:var(--rosa-escuro);
+}
+.hero h1 em{font-style:italic;color:var(--rosa);font-weight:500;display:block;font-size:.78em;margin-top:6px}
+.hero-lead{
+  font-size:16px;color:var(--texto);margin-bottom:28px;
+  max-width:440px;font-weight:400;
+}
+.hero-foto{
+  position:relative;
+  margin:24px auto 40px;
+  width:calc(100% - 8px);max-width:380px;
+  padding:0 24px 24px 0;
+}
+.hero-foto-bloco{
+  position:absolute;
+  top:20px;right:0;bottom:0;left:20px;
+  background:linear-gradient(140deg, var(--rosa) 0%, var(--rosa-escuro) 100%);
+  opacity:.22;
+  border-radius:18px;
+  z-index:1;
+}
+.hero-foto-principal{
+  position:relative;z-index:2;
+  border-radius:18px;overflow:hidden;
+  aspect-ratio:4/5;
+  box-shadow:0 24px 50px rgba(154,103,114,.22), 0 6px 16px rgba(154,103,114,.1);
+  background:#f6e4e7;
+}
+.hero-foto-principal img{
+  width:100%;height:100%;object-fit:cover;object-position:center 18%;
+  display:block;
+}
+.hero-foto-secundaria{
+  position:absolute;
+  right:-4px;bottom:24px;
+  z-index:3;
+  width:42%;max-width:150px;
+  aspect-ratio:1/1;
+  border-radius:14px;overflow:hidden;
+  border:4px solid #fff;
+  box-shadow:0 14px 32px rgba(154,103,114,.28);
+  background:#f6e4e7;
+}
+.hero-foto-secundaria img{
+  width:100%;height:100%;object-fit:cover;object-position:center;
+  display:block;
+}
+.hero-assinatura{
+  position:absolute;left:-4px;bottom:-14px;z-index:4;
+  text-align:left;color:var(--rosa-escuro);
+  font-size:10px;letter-spacing:.16em;text-transform:uppercase;line-height:1.5;
+  background:#fff;padding:10px 16px;border-radius:6px;
+  box-shadow:0 8px 24px rgba(154,103,114,.18);
+}
+.hero-assinatura strong{font-size:12px;font-weight:600;display:block;letter-spacing:.12em;margin-bottom:2px}
+
+/* BOTÃO */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  background:var(--rosa-escuro);color:#fff;
+  padding:18px 32px;border-radius:999px;
+  font-family:'Inter',sans-serif;font-weight:500;font-size:16px;
+  border:none;cursor:pointer;width:100%;
+  transition:background .2s,transform .15s;
+  box-shadow:0 8px 22px rgba(154,103,114,.3);
+  min-height:54px;
+}
+.btn:hover,.btn:focus{background:#7d5460;transform:translateY(-1px);outline:none}
+.btn:disabled{opacity:.5;cursor:wait}
+
+/* SEÇÕES */
+.secao{padding:60px 0}
+.titulo{text-align:center;max-width:680px;margin:0 auto 38px}
+.titulo h2{font-size:30px;margin-bottom:12px}
+.titulo p{color:var(--texto-suave);font-size:16px}
+.olho{
+  display:inline-block;color:var(--verde-escuro);
+  font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+  margin-bottom:14px;
+}
+
+/* DOR */
+.dor{background:#fff;text-align:center}
+.dor-texto{max-width:680px;margin:0 auto;font-size:18px;color:var(--texto);font-weight:300;line-height:1.65}
+.dor-texto strong{color:var(--rosa-escuro);font-weight:600}
+.dor-aviso{max-width:640px;margin:36px auto 0;padding:24px 28px;border-left:3px solid var(--rosa-escuro);background:var(--rosa-poeira);text-align:left;border-radius:0 8px 8px 0}
+.dor-aviso p{font-size:15px;color:var(--texto);line-height:1.6;margin:0}
+.dor-aviso strong{color:var(--rosa-escuro);font-weight:600}
+
+/* MÉTODO */
+.metodo{background:linear-gradient(180deg,#f8f1ec 0%,#f6e4e7 100%)}
+.fases{display:flex;flex-direction:column;gap:18px}
+.fase{
+  background:#fff;padding:32px 28px;border-radius:8px;box-shadow:var(--sombra);
+}
+.fase-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:48px;color:var(--rosa-suave);line-height:1;margin-bottom:4px;
+}
+.fase h3{font-size:22px;margin-bottom:10px}
+.fase p{font-size:15px;color:var(--texto-suave);margin:0}
+
+/* RECEBE */
+.recebe{background:#fff}
+.recebe-lista{list-style:none;max-width:720px;margin:0 auto}
+.recebe-item{padding:24px 0;border-bottom:1px solid #ece2dc}
+.recebe-item:last-child{border-bottom:none}
+.recebe-item h3{font-size:21px;margin-bottom:6px;font-weight:500}
+.recebe-item p{font-size:15px;color:var(--texto-suave);margin:0;line-height:1.6}
+
+/* BANNER PROMESSA — CTA mid-página */
+.promessa{
+  background:linear-gradient(135deg, var(--rosa-poeira) 0%, #f0d4d8 100%);
+  padding:48px 0;text-align:center;
+  border-top:1px solid rgba(154,103,114,.1);
+  border-bottom:1px solid rgba(154,103,114,.1);
+}
+.promessa-texto{
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;font-weight:500;line-height:1.4;color:var(--rosa-escuro);
+  max-width:680px;margin:0 auto 28px;
+}
+.promessa-texto strong{font-weight:600;font-style:italic}
+.btn-claro{background:var(--rosa-escuro);color:#fff}
+
+/* CITAÇÃO */
+.citacao{background:var(--rosa-escuro);color:#fff;padding:64px 0;text-align:center}
+.citacao blockquote{
+  font-family:'Cormorant Garamond',serif;
+  font-size:24px;font-weight:500;font-style:italic;line-height:1.4;
+  max-width:760px;margin:0 auto 22px;
+}
+.citacao cite{
+  font-family:'Inter',sans-serif;font-style:normal;font-size:13px;
+  letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.8);
+}
+
+/* RESULTADOS */
+.resultados{background:linear-gradient(180deg,#fbf8f5 0%,#f8f1ec 100%);text-align:center}
+.resultados-img{
+  max-width:900px;margin:0 auto 36px;border-radius:8px;overflow:hidden;
+  box-shadow:var(--sombra);
+}
+.numeros{display:flex;flex-direction:column;gap:14px;max-width:540px;margin:0 auto}
+.num-card{background:#fff;padding:24px 18px;border-radius:8px;box-shadow:var(--sombra)}
+.num-grande{
+  font-family:'Cormorant Garamond',serif;font-size:46px;font-weight:500;
+  color:var(--rosa);line-height:1;margin-bottom:6px;
+}
+.num-label{font-size:13px;color:var(--texto-suave);letter-spacing:.04em}
+
+/* SOBRE */
+.sobre{background:#fff}
+.sobre-grid{display:flex;flex-direction:column;gap:32px}
+.sobre-img{
+  border-radius:8px;overflow:hidden;box-shadow:var(--sombra);
+  aspect-ratio:3/4;max-width:360px;margin:0 auto;width:100%;
+}
+.sobre-img img{width:100%;height:100%;object-fit:cover}
+.sobre h2{font-size:30px;margin-bottom:18px}
+.sobre p{font-size:17px;margin-bottom:14px}
+.assinatura{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:22px;color:var(--rosa);margin-top:18px !important;
+}
+
+/* FORMULÁRIO */
+.form-secao{
+  background:linear-gradient(135deg,#9a6772 0%,#7d5460 100%);
+  color:#fff;padding:64px 0;
+}
+.form-secao .titulo h2{color:#fff;font-size:30px}
+.form-secao .titulo p{color:rgba(255,255,255,.9)}
+.form-secao .olho{color:rgba(255,255,255,.75)}
+.form-box{
+  background:#fff;padding:32px 26px;border-radius:12px;max-width:480px;margin:0 auto;
+  box-shadow:0 20px 50px rgba(0,0,0,.2);
+}
+.form-box label{
+  display:block;font-size:12px;font-weight:500;color:var(--rosa-escuro);
+  margin-bottom:7px;margin-top:18px;letter-spacing:.05em;text-transform:uppercase;
+}
+.form-box label:first-of-type{margin-top:0}
+.form-box input,.form-box select{
+  width:100%;padding:14px 16px;border:1.5px solid #ece2dc;border-radius:6px;
+  font-family:'Inter',sans-serif;font-size:16px;color:var(--texto);background:#fff;
+  -webkit-appearance:none;appearance:none;
+}
+.form-box select{
+  background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"><path fill="%239a6772" d="M6 8L0 0h12z"/></svg>');
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:40px;
+}
+.form-box input:focus,.form-box select:focus{outline:none;border-color:var(--rosa)}
+.form-erro{color:#b94a4a;font-size:14px;margin-top:12px;display:none;font-weight:500}
+.form-box .btn{margin-top:24px}
+.form-loading{display:none;text-align:center;margin-top:14px;color:var(--texto-suave);font-size:14px}
+.form-priv{
+  font-size:11px;color:var(--texto-suave);text-align:center;
+  margin-top:16px;line-height:1.5;
+}
+
+/* FAQ */
+.faq{background:var(--off-white)}
+.faq-lista{max-width:720px;margin:0 auto}
+.faq-item{
+  background:#fff;border-radius:6px;margin-bottom:10px;
+  box-shadow:0 2px 8px rgba(154,103,114,.06);overflow:hidden;
+}
+.faq-item summary{
+  padding:22px 24px;cursor:pointer;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;
+  color:var(--texto);font-size:16px;font-weight:500;line-height:1.4;gap:16px;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{
+  content:"+";font-size:26px;color:var(--verde-escuro);
+  font-weight:300;flex-shrink:0;transition:transform .2s;
+}
+.faq-item[open] summary{color:var(--rosa-escuro)}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item p{padding:0 24px 22px;color:var(--texto-suave);font-size:15px;line-height:1.7}
+
+/* RODAPÉ */
+.rodape{
+  background:#f6e4e7;color:var(--texto-suave);text-align:center;
+  padding:42px 22px;font-size:13px;
+}
+.rodape img{height:54px;margin:0 auto 14px;width:auto}
+.rodape strong{color:var(--rosa-escuro);font-weight:600}
+.rodape-mini{margin-top:12px;font-size:11px;color:#a89e98}
+
+/* DESKTOP */
+@media (min-width:760px){
+  body{font-size:17px}
+  .container{padding:0 28px}
+  .topo{padding:16px 0}
+  .topo img{height:46px}
+  .topo-cta{padding:10px 22px;font-size:14px}
+
+  .hero{padding:0}
+  .hero-grid{flex-direction:row;align-items:center;gap:72px;min-height:640px;padding:60px 0}
+  .hero-texto{flex:1;padding:0;max-width:520px}
+  .hero-foto{
+    flex:0 0 44%;margin:0;max-width:none;width:auto;
+    padding:30px 60px 30px 30px;align-self:center;
+  }
+  .hero-foto-bloco{top:30px;right:36px;bottom:0;left:6px;border-radius:22px;opacity:.25}
+  .hero-foto-principal{border-radius:22px;aspect-ratio:4/5;max-height:540px}
+  .hero-foto-secundaria{
+    width:38%;max-width:170px;aspect-ratio:4/5;
+    right:14px;bottom:-20px;border-radius:16px;border-width:6px;
+  }
+  .hero-assinatura{left:6px;bottom:-20px;font-size:11px;padding:12px 18px}
+  .hero-assinatura strong{font-size:13px}
+  .hero-tag{font-size:12px;margin-bottom:28px}
+  .hero h1{font-size:58px;margin-bottom:20px}
+  .hero h1 em{font-size:38px;margin-top:6px}
+  .hero-lead{font-size:18px;max-width:440px;margin-bottom:36px}
+  .btn{width:auto;padding:20px 40px;font-size:17px}
+
+  .secao{padding:96px 0}
+  .titulo{margin-bottom:54px}
+  .titulo h2{font-size:40px}
+  .titulo p{font-size:18px}
+
+  .dor-texto{font-size:21px}
+  .dor-aviso{padding:28px 32px;margin-top:44px}
+  .dor-aviso p{font-size:17px}
+
+  .fases{flex-direction:row;gap:24px}
+  .fase{flex:1;padding:40px 32px}
+  .fase h3{font-size:24px}
+
+  .promessa{padding:72px 0}
+  .promessa-texto{font-size:30px;margin-bottom:36px}
+  .citacao{padding:84px 0}
+  .citacao blockquote{font-size:32px}
+
+  .numeros{flex-direction:row;max-width:780px}
+  .num-card{flex:1;padding:30px 22px}
+  .num-grande{font-size:52px}
+
+  .sobre-grid{flex-direction:row;align-items:center;gap:64px}
+  .sobre-img{flex:.85;max-width:none;margin:0}
+  .sobre-texto{flex:1.15}
+  .sobre h2{font-size:40px}
+
+  .form-secao{padding:96px 0}
+  .form-secao .titulo h2{font-size:38px}
+  .form-box{padding:44px 40px}
+
+  .faq-item summary{padding:26px 30px;font-size:18px}
+  .faq-item p{padding:0 30px 26px;font-size:16px}
+
+  .rodape{padding:54px 22px}
+  .rodape img{height:60px}
+}
+
+/* PREFER REDUCED MOTION */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="container">
+    <a href="#topo" aria-label="Voltar ao topo"><img src="assets/logo-horizontal.png" alt="Leticia Lucena Nutricionista" width="280" height="80"></a>
+    <a href="#formulario" class="topo-cta">Quero Agendar</a>
+  </div>
+</header>
+
+<section class="hero" id="topo">
+  <div class="container hero-grid">
+    <div class="hero-texto">
+      <span class="hero-tag">Método Mais Leve  /  Mulheres 35+</span>
+      <h1>Leticia Lucena. <em>Emagrecimento que cabe na sua vida.</em></h1>
+      <p class="hero-lead">Acompanhamento nutricional individual, sem dieta restritiva e sem efeito sanfona.</p>
+      <a href="#formulario" class="btn">Agendar agora</a>
+    </div>
+    <div class="hero-foto">
+      <div class="hero-foto-bloco" aria-hidden="true"></div>
+      <div class="hero-foto-principal">
+        <img src="assets/leticia-rindo.jpg" alt="Leticia Lucena, nutricionista em Porto Alegre" width="1200" height="1800" fetchpriority="high">
+      </div>
+      <div class="hero-foto-secundaria" aria-hidden="true">
+        <img src="assets/leticia-celular.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
+      </div>
+      <div class="hero-assinatura">
+        <strong>Leticia Lucena</strong>
+        Nutricionista
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="secao dor">
+  <div class="container">
+    <span class="olho">Para quem é</span>
+    <p class="dor-texto">Você acorda cedo, vai pra academia, tenta comer melhor e a balança não muda. A roupa aperta, a barriga não desincha. Depois dos 35 o corpo da mulher muda, e o que funcionava aos 25 simplesmente para de funcionar. <strong>Isso não tem nada a ver com falta de força de vontade.</strong></p>
+    <div class="dor-aviso">
+      <p>Antes de qualquer coisa, quero esclarecer: <strong>o Método Mais Leve não é mágico.</strong> Não foi feito para quem busca perder peso de maneira fácil. É um método que funciona e exige esforço, dedicação e coragem.</p>
+    </div>
+  </div>
+</section>
+
+<section class="secao metodo">
+  <div class="container">
+    <div class="titulo">
+      <span class="olho">Método Mais Leve</span>
+      <h2>Três fases para um emagrecimento que se sustenta.</h2>
+      <p>Um processo de 90 dias com bioimpedância, plano alimentar individual e suporte próximo do começo ao fim.</p>
+    </div>
+    <div class="fases">
+      <div class="fase">
+        <div class="fase-num">01</div>
+        <h3>Mapeamento</h3>
+        <p>Avaliação por bioimpedância, análise do histórico de saúde e questionário pré-consulta para entender o que está travando o seu corpo.</p>
+      </div>
+      <div class="fase">
+        <div class="fase-num">02</div>
+        <h3>Intervenção</h3>
+        <p>Plano alimentar 100% personalizado, ajustes semanais conforme seu progresso e suporte diário pelo WhatsApp.</p>
+      </div>
+      <div class="fase">
+        <div class="fase-num">03</div>
+        <h3>Manutenção</h3>
+        <p>Com o objetivo alcançado, espaçamos as consultas e te preparamos para manter o peso de forma definitiva.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="promessa">
+  <div class="container">
+    <p class="promessa-texto">Reduza até <strong>2 números no manequim</strong> e recupere sua autoestima. Acompanhamento nutricional individual, sem dieta restritiva e sem efeito sanfona.</p>
+    <a href="#formulario" class="btn btn-claro">Quero começar</a>
+  </div>
+</section>
+
+<section class="secao recebe">
+  <div class="container">
+    <div class="titulo">
+      <span class="olho">Acompanhamento</span>
+      <h2>Muito além de uma consulta.</h2>
+    </div>
+    <ul class="recebe-lista">
+      <li class="recebe-item">
+        <h3>Plano alimentar individual</h3>
+        <p>Adaptado à sua rotina e às exceções da vida real. Você pode comer pizza, tomar uma taça de vinho e continuar emagrecendo.</p>
+      </li>
+      <li class="recebe-item">
+        <h3>Suporte diário pelo WhatsApp</h3>
+        <p>Em horário comercial, todos os dias. Dúvida no jantar fora? Convite de aniversário? Você não decide sozinha.</p>
+      </li>
+      <li class="recebe-item">
+        <h3>Avaliação completa em todas as consultas</h3>
+        <p>Bioimpedância para acompanhar massa magra, gordura corporal e visceral, além da análise dos seus sinais e sintomas, como queixas intestinais, gástricas e energia ao longo do dia.</p>
+      </li>
+      <li class="recebe-item">
+        <h3>Suplementação quando necessária</h3>
+        <p>Junto com o plano alimentar, prescrevo suplementação para prevenção, tratamento e otimização dos seus resultados. Sempre individual, nada que não combinemos antes.</p>
+      </li>
+      <li class="recebe-item">
+        <h3>Kit digital de boas-vindas</h3>
+        <p>Mais de 50 materiais: e-books de receitas, indicações de marcas saudáveis e guias para a rotina.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="citacao">
+  <div class="container">
+    <blockquote>"O que minhas pacientes mais sentem não é falta de informação. É falta de alguém que olhe pra elas além do peso na balança."</blockquote>
+    <cite>Leticia Lucena, Nutricionista</cite>
+  </div>
+</section>
+
+<section class="secao resultados">
+  <div class="container">
+    <div class="titulo">
+      <span class="olho">Resultados</span>
+      <h2>Mulheres que pararam de recomeçar.</h2>
+    </div>
+    <div class="resultados-img">
+      <img src="assets/depoimentos.jpg" alt="Resultados de pacientes do Método Mais Leve" loading="lazy" decoding="async" width="1100" height="660">
+    </div>
+    <div class="numeros">
+      <div class="num-card">
+        <div class="num-grande">+400</div>
+        <div class="num-label">Mulheres acompanhadas</div>
+      </div>
+      <div class="num-card">
+        <div class="num-grande">90<span style="font-size:.6em">d</span></div>
+        <div class="num-label">Duração do processo</div>
+      </div>
+      <div class="num-card">
+        <div class="num-grande">0</div>
+        <div class="num-label">Dietas restritivas</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="secao sobre">
+  <div class="container sobre-grid">
+    <div class="sobre-img">
+      <img src="assets/leticia-rindo.jpg" alt="Leticia Lucena" loading="lazy" decoding="async" width="540" height="720">
+    </div>
+    <div class="sobre-texto">
+      <span class="olho">Quem te atende</span>
+      <h2>Leticia Lucena</h2>
+      <p>Nutricionista em Porto Alegre, especializada em emagrecimento feminino. Há mais de 8 anos atendendo mulheres acima dos 35 anos que já tentaram de tudo e querem fazer diferente.</p>
+      <p>Desenvolvi o Método Mais Leve por uma razão: detesto dieta restritiva. Essas metodologias antigas só geram frustração e efeito sanfona. O que funciona é um processo individual, baseado em ciência e construído sobre a sua rotina real.</p>
+      <p class="assinatura">Leticia Lucena</p>
+    </div>
+  </div>
+</section>
+
+<section class="secao form-secao" id="formulario">
+  <div class="container">
+    <div class="titulo">
+      <span class="olho">Próximo passo</span>
+      <h2>Preencha e fale comigo no WhatsApp.</h2>
+      <p>Vagas limitadas para este mês. Deixe seus dados e siga direto para o atendimento.</p>
+    </div>
+    <form class="form-box" id="formLead" novalidate>
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Como você quer ser chamada" required>
+
+      <label for="telefone">WhatsApp com DDD</label>
+      <input type="tel" id="telefone" name="telefone" autocomplete="tel" inputmode="numeric" placeholder="(51) 99999-9999" required>
+
+      <label for="objetivo">Seu objetivo</label>
+      <select id="objetivo" name="objetivo" required>
+        <option value="">Selecione...</option>
+        <option>Perder até 5kg</option>
+        <option>Perder de 5 a 10kg</option>
+        <option>Perder mais de 10kg</option>
+        <option>Desinchar e perder medidas</option>
+        <option>Acompanhamento com caneta emagrecedora</option>
+        <option>Manutenção e mais saúde</option>
+      </select>
+
+      <div id="formErro" class="form-erro"></div>
+      <button type="submit" class="btn" id="btnEnviar">Continuar no WhatsApp</button>
+      <div class="form-loading" id="formLoading">Enviando...</div>
+      <p class="form-priv">Seus dados são tratados com sigilo e usados apenas para o atendimento.</p>
+    </form>
+  </div>
+</section>
+
+<section class="secao faq">
+  <div class="container">
+    <div class="titulo">
+      <span class="olho">Dúvidas frequentes</span>
+      <h2>O que mais perguntam.</h2>
+    </div>
+    <div class="faq-lista">
+      <details class="faq-item">
+        <summary>Para quem é essa consulta?</summary>
+        <p>Para mulheres acima dos 35 anos que querem emagrecer de forma saudável e sustentável, sem dieta radical. Atendo principalmente quem tem rotina corrida, já pratica atividade física e sente que tentou de tudo sem conseguir resultado duradouro. Se você se reconhece, esse acompanhamento foi feito pra você.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Funciona para quem está usando caneta emagrecedora?</summary>
+        <p>Sim. A medicação reduz o apetite, mas não ensina o seu corpo a emagrecer e nem te prepara para quando parar de usar. Eu ajusto o plano alimentar conforme a fase da medicação, prevenindo efeito sanfona, enjoo e queda de energia.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Você aceita plano de saúde?</summary>
+        <p>Atualmente não trabalho com convênios médicos, mas emito recibo para reembolso, caso seu plano de saúde tenha essa cobertura.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Preciso cortar carboidrato, doce ou pão?</summary>
+        <p>Não. Dietas restritivas geram frustração e efeito sanfona. Você vai comer pizza, doce e pão de forma estratégica. O segredo está no equilíbrio, não na restrição.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Em quanto tempo vejo resultado?</summary>
+        <p>A maioria das pacientes percebe diferença em disposição, sono e medidas já nas primeiras duas a três semanas. Os 10kg em 90 dias são possíveis para quem segue o processo.</p>
+      </details>
+      <details class="faq-item">
+        <summary>O atendimento é só em Porto Alegre?</summary>
+        <p>Não. Atendo presencialmente em Porto Alegre e online para mulheres de todo o Brasil. O suporte pelo WhatsApp é igual nos dois formatos.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Como funciona depois que eu preencho?</summary>
+        <p>Você é direcionada para o meu WhatsApp. Eu te respondo em horário comercial para entender o seu momento e explicar os próximos passos.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="rodape">
+  <img src="assets/logo-horizontal.png" alt="Leticia Lucena Nutricionista" loading="lazy" width="280" height="80">
+  <p><strong>Leticia Lucena Nutricionista</strong></p>
+  <p>Atendimento em Porto Alegre e online para todo o Brasil</p>
+  <p class="rodape-mini">© 2026 Todos os direitos reservados</p>
+</footer>
+
+<script>
+var SHEET="https://script.google.com/macros/s/AKfycbyg3muBHw8V85iYCwFT9a03dpA14oThdNUdMDCZvrsZFKCVUFaaeYs8ZnRVjOEHc3qi/exec";
+
+document.getElementById('telefone').addEventListener('input',function(e){
+  var v=e.target.value.replace(/\D/g,'').slice(0,11);
+  if(v.length>6)v='('+v.slice(0,2)+') '+v.slice(2,7)+'-'+v.slice(7);
+  else if(v.length>2)v='('+v.slice(0,2)+') '+v.slice(2);
+  e.target.value=v;
+});
+
+document.getElementById('formLead').addEventListener('submit',function(e){
+  e.preventDefault();
+  var nome=document.getElementById('nome').value.trim();
+  var tel=document.getElementById('telefone').value.trim();
+  var obj=document.getElementById('objetivo').value;
+  var erro=document.getElementById('formErro');
+  var btn=document.getElementById('btnEnviar');
+  var ld=document.getElementById('formLoading');
+  erro.style.display='none';
+  if(!nome||nome.length<2){erro.textContent='Por favor, informe seu nome.';erro.style.display='block';return}
+  if(tel.replace(/\D/g,'').length<10){erro.textContent='WhatsApp inválido. Use DDD + número.';erro.style.display='block';return}
+  if(!obj){erro.textContent='Selecione seu objetivo.';erro.style.display='block';return}
+  btn.disabled=true;ld.style.display='block';
+  try{sessionStorage.setItem('leadLeticia',JSON.stringify({nome:nome,telefone:tel,objetivo:obj}))}catch(_){}
+  var d=new FormData();
+  d.append('nome',nome);d.append('telefone',tel);d.append('objetivo',obj);
+  d.append('origem','Landing 35+');d.append('timestamp',new Date().toISOString());
+  fetch(SHEET,{method:'POST',mode:'no-cors',body:d}).catch(function(){}).finally(function(){
+    if(window.fbq)fbq('track','Lead',{content_name:'Landing 35+',value:0,currency:'BRL'});
+    window.location.href='obrigado.html';
+  });
+});
+</script>
+
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
